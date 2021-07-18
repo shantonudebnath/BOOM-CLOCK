@@ -1,0 +1,126 @@
+﻿<!-- JS clock - Author:Shantonu Debnath -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Boom Clock</title>
+
+<!-- css -->
+
+<link rel="stylesheet" href="assets/css/clock.css">
+<link rel="stylesheet" href="assets/css/animate.css"/>
+
+<!-- js -->
+
+<script src="assets/js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Start bt configuration -->
+<a class="open_configuration_bt" id="open_configuration_bt"></a>
+<a class="close_configuration_bt" id="close_configuration_bt"></a>
+<!-- End bt configuration -->
+
+<!-- Start bt theme -->
+<a class="open_themes_bt" id="open_themes_bt"></a>
+<!-- End bt theme -->
+
+<!-- Start Languages -->
+<div class="modal_box animated fadeInRight delay-02s" id="languagemodal">
+   <a class="resetsearch"></a>
+   <input type="text" id="languagesearch" name="languagesearch" class="languagesearch" placeholder="Buscar idioma" data-live-search-normalize="true" autocomplete="off" value="">
+   <ul class="listlanguages" id="list">
+     <div id="notfound" class="notfound animated fadeIn delay-02s">No language found</div>
+     <li id="li_en_US"><a id="bt_en_US"><img src="assets/languages/en_US.svg"><span id="en_US">English</span><i>ingles</i></a></li>
+     <li id="li_bn"><a id="bt_bn"><img src="assets/languages/bn.svg"><span id="bn">Bangla</span><i>ingles</i></a></li>
+   </ul>
+   <a id="languageclose" class="close_modal animated fadeInUp delay-03s"></a>
+</div>
+<!-- End Languages -->
+
+
+<!-- Start Formato de hora -->
+<div class="time_format_panel modal_box animated fadeInRight delay-02s" id="options">
+<div class="box">
+<h2 id="h2_time_format">Formate</h2>
+<ul>
+  <li><a id="24h_bt" class="active">24 hr</a></li>
+  <li><a id="12h_bt">12 hr</a></li>
+</ul>
+</div>
+<a id="time_format_close_bt" class="close_modal animated fadeInUp delay-03s"></a>
+</div>
+<!-- End Formato de hora -->
+
+<!--Start clock-->
+<div class="line_top"></div>
+<div class="line_left"></div>
+<div class="line_right"></div>
+<div class="line_bottom"></div>
+<div class="wrapper">
+   <div id="hour">
+	  <div id="clock" class="clock"></div>
+   <div class="seconds" id="seconds"><p>:</p><div id="sec"></div></div>
+   </div>
+  	<div id="month" class="month"></div>
+	  <div id="dates">
+    		<div id="date" class="date"></div>
+		    <div id="day" class="day"></div>
+      <div id="year" class="year"></div>
+	  </div>
+</div>
+<!--End clock-->
+
+<!--Start themes-->
+<div id="themes" class="themes_modal close_themes">
+<a class="close_themes_bt" id="close_themes_bt"></a>
+<a class="back2_bt"></a>
+<h2 id="h2_themes">Theme</h2>
+  <ul id="themes_list">
+     <li><a class="theme_1"><div class="check"></div><img src="assets/images/bg/bg.gif" id="theme_1" class="active"></a></li>
+     <li><a class="theme_3"><img src="assets/images/bg/bg3.gif" id="theme_3"></a></li>
+     <li><a class="theme_4"><img src="assets/images/bg/bg4.gif" id="theme_4"></a></li>
+     <li><a class="theme_5"><img src="assets/images/bg/bg5.gif" id="theme_5"></a></li>
+  </ul>
+</div>
+<!--End themes-->
+
+<!--Start configuration-->
+<div class="configuration_modal" id="configuration">
+<div class="margin">
+<a class="back_bt"></a>
+<h2 id="h2_configuration">Configuración</h2>
+<!-- Time format -->
+<div class="box">
+<h3 id="h3_time_format">Formato de hora</h3>
+<div class="left"><p class="normal" id="p_time_format">24 h</p></div>
+<div class="right"><a id="time_format_bt" class="edit_bt"></a></div>
+</div>
+<!-- Abrir reloj -->
+<div class="box">
+<h3 id="h3_open_clock">Abrir reloj</h3>
+<div class="left"><p><a id="hotkeys_bt" class="hotkeys_bt"><span id="hotkeys" class="hotkeys_bt"></span></a></p></div>
+<div class="right"><a id="edit_bt" class="edit_bt"></a></div>
+</div>
+<!-- Idiomas -->
+<div class="box">
+<h3 id="h3_language">Idioma</h3>
+<div class="left"><p id="selectedlanguage">English</p></div>
+<div class="right"><a id="language_bt" class="edit_bt"></a></div>
+</div>
+ </div>
+</div>
+<!--End configuration-->
+
+<!--js clock-->
+<script src="assets/js/clock.js"></script>
+<script src="assets/js/configuration.js"></script>
+<script src="assets/js/languages.js"></script>
+<script src="assets/js/themes.js"></script>
+<script src="assets/js/ui-labels.js"></script>
+<div><marquee scrollamount="10" scrolldelay="10" style="color:blue">Developed by Shantonu Debnath</marquee></div>
+</body>
+</html>
+<!-- JS clock - Author: Takeshi Nakamoto 2020 -->

@@ -1,0 +1,31 @@
+{
+   "browser_action": {
+      "default_icon": "48.png",
+      "default_popup": "popup.html"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Alt+Z",
+            "default": "Alt+Z",
+            "linux": "Alt+Z",
+            "mac": "Alt+Z",
+            "windows": "Alt+Z"
+         }
+      }
+   },
+   "default_locale": "en_US",
+   "description": "BOOM clock made develop by Shantonu Debnath",
+   "icons": {
+      "128": "128.png",
+      "48": "48.png",
+      "16": "16.png"
+
+   },
+   "manifest_version": 2,
+   "name": "BOOM CLOCK",
+   "offline_enabled": true,
+   "short_name": "BOOM CLOCK",
+   "version": "2.0"
+
+}
